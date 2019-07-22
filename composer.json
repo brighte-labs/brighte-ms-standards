@@ -1,0 +1,21 @@
+{
+    "name": "brighte/brighte-ms-standards",
+    "description": "Coding standards - CodeSniffer Rules - for Brighte PHP microservices",
+    "keywords": ["coding standard", "cs", "coding", "standard", "ruleset", "phpcs", "PHPCodeSniffer", "CodeSniffer", "sniffer"],
+    "version": "1.0.0",
+    "type": "library",
+    "require": {
+        "consistence/coding-standard": "^3.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marek Petras",
+            "email": "marek.petras@brighte.com.au"
+        },
+        {
+            "name": "Chris Young",
+            "email": "chris.young@brighte.com.au"
+        }
+    ]
+}
