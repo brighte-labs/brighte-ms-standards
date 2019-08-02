@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="BrighteCustom">
-    <description>The Brighte coding standards.</description>
+    <description>Brighte microservice coding standards.</description>
 
     <!-- Include the whole Symfony3Custom standard -->
     <rule ref="vendor/consistence/coding-standard/Consistence/ruleset.xml">
