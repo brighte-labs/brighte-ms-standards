@@ -2,7 +2,10 @@
 <ruleset name="BrighteCustom">
     <description>Brighte microservice coding standards.</description>
 
-    <!-- Include the whole Symfony3Custom standard -->
+    <rule ref="PSR12">
+        <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
+        <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" />
+    </rule>
     <rule ref="vendor/consistence/coding-standard/Consistence/ruleset.xml">
         <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
 
