@@ -6,6 +6,11 @@
         <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
         <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" />
     </rule>
+    <rule ref="PEAR.WhiteSpace.ScopeIndent">
+        <properties>
+          <property name="exact" value="true"/>
+        </properties>
+    </rule>
     <rule ref="vendor/consistence/coding-standard/Consistence/ruleset.xml">
         <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
 
