@@ -2,7 +2,7 @@
     "name": "brighte/brighte-ms-standards",
     "description": "Coding standards - CodeSniffer Rules - for Brighte PHP microservices",
     "keywords": ["coding standard", "cs", "coding", "standard", "ruleset", "phpcs", "PHPCodeSniffer", "CodeSniffer", "sniffer"],
-    "version": "1.2.2",
+    "version": "1.2.3",
     "type": "library",
     "require": {
         "consistence/coding-standard": "^3.8"
