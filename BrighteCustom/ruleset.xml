@@ -11,7 +11,7 @@
           <property name="exact" value="true"/>
           <property name="indent" value="4"/>
           <property name="tabindent" value="false"/>
-          <property name="ignoreIndentationTokens" type="array" value="T_COMMENT,T_DOC_COMMENT_OPEN_TAG,T_OBJECT_OPERATOR"/>
+          <property name="ignoreIndentationTokens" type="array" value="T_COMMENT,T_DOC_COMMENT_OPEN_TAG,T_OBJECT_OPERATOR,T_CASE"/>
         </properties>
     </rule>
     <rule ref="vendor/consistence/coding-standard/Consistence/ruleset.xml">
