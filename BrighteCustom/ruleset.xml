@@ -5,6 +5,8 @@
     <rule ref="PSR12">
         <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
         <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" />
+        <exclude name="PSR12.Traits.UseDeclaration.UseAfterBrace"/>
+        <exclude name="PSR12.Traits.UseDeclaration.BlankLineAfterLastUse" />
     </rule>
     <rule ref="PEAR.WhiteSpace.ScopeIndent">
         <properties>
@@ -37,6 +39,17 @@
         <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces.NonFullyQualified" />
         <exclude name="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax.DisallowedArrayTypeHintSyntax" />
         <exclude name="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly.ReferencedGeneralException" />
+        <exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPostIncrementOperator" />
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="spacesCountAroundEqualsSign" value="0" />
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
+        <properties>
+            <property name="linesCountBetweenUseTypes" value="1" />
+        </properties>
     </rule>
     <rule ref="Generic.Files.LineLength">
         <properties>

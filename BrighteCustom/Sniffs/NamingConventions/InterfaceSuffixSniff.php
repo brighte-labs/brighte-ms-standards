@@ -1,10 +1,13 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace BrighteCustom\Sniffs\NamingConventions;
 
 use PHP_CodeSniffer\Files\File;
+
+//phpcs:disable SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
+//phpcs:disable SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingReturnTypeHint
 
 /**
  * InterfaceSuffixSniff
@@ -38,15 +41,15 @@ class InterfaceSuffixSniff implements \PHP_CodeSniffer\Sniffs\Sniff
     /**
      * Processes this test, when one of its tokens is encountered.
      *
-     * @param \BrighteCustom\Sniffs\NamingConventions\PHP_CodeSniffer_File $phpcsFile All the tokens found in the document.
+     * @param \PHP_CodeSniffer_File $phpcsFile All the tokens found in the document.
      * @param int                  $stackPtr  The position of the current token in
      *                                        the stack passed in $tokens.
      * @return void
      */
     public function process(File $phpcsFile, $stackPtr)
     {
-        $tokens   = $phpcsFile->getTokens();
-        $line     = $tokens[$stackPtr]['line'];
+        $tokens = $phpcsFile->getTokens();
+        $line = $tokens[$stackPtr]['line'];
 
         while ($tokens[$stackPtr]['line'] === $line) {
             if ($tokens[$stackPtr]['type'] === 'T_STRING') {
