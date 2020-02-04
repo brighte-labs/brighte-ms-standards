@@ -5,7 +5,12 @@
     "version": "1.2.5",
     "type": "library",
     "require": {
-        "consistence/coding-standard": "3.8"
+        "consistence/coding-standard": "3.8",
+        "php": "^7.3"
+    },
+    "scripts": {
+        "lint": "phpcs --colors -p",
+        "lint-fix": "phpcbf"
     },
     "license": "MIT",
     "authors": [
