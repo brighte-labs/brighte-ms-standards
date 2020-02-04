@@ -3,10 +3,6 @@
     <description>Brighte microservice coding standards.</description>
 
     <rule ref="PSR12">
-        <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
-        <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" />
-        <exclude name="PSR12.Traits.UseDeclaration.UseAfterBrace"/>
-        <exclude name="PSR12.Traits.UseDeclaration.BlankLineAfterLastUse" />
     </rule>
     <rule ref="PEAR.WhiteSpace.ScopeIndent">
         <properties>
@@ -18,7 +14,8 @@
     </rule>
     <rule ref="vendor/consistence/coding-standard/Consistence/ruleset.xml">
         <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
-
+        <exclude name="Squiz.WhiteSpace.FunctionSpacing.BeforeFirst" />
+        <exclude name="Squiz.WhiteSpace.MemberVarSpacing.FirstIncorrect" />
         <properties>
             <property name="exceptionsDirectoryName" value="Exceptions" />
         </properties>
@@ -29,7 +26,7 @@
         <exclude name="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming.SuperfluousPrefix" />
         <exclude name="SlevomatCodingStandard.Commenting.DisallowOneLinePropertyDocComment.OneLinePropertyComment" />
         <exclude name="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator.DisallowedShortTernaryOperator" />
-        <exclude name="SlevomatCodingStandard.ControlStructures.NewWithParentheses.MissingParentheses" />
+        <exclude name="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses.UselessParentheses" />
         <exclude name="SlevomatCodingStandard.ControlStructures.RequireYodaComparison.RequiredYodaComparison" />
         <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName.NoMatchBetweenTypeNameAndFileName" />
         <exclude name="SlevomatCodingStandard.Functions.StaticClosure.ClosureNotStatic" />
@@ -40,6 +37,17 @@
         <exclude name="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax.DisallowedArrayTypeHintSyntax" />
         <exclude name="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly.ReferencedGeneralException" />
         <exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPostIncrementOperator" />
+    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
+        <properties>
+            <property name="linesCountAfterOpeningBrace" value="0"/>
+            <property name="linesCountBeforeClosingBrace" value="0"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing">
+        <properties>
+            <property name="linesCountBeforeFirstUse" value="0"/>
+        </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>

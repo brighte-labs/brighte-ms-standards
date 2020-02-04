@@ -20,7 +20,6 @@ use PHP_CodeSniffer\Files\File;
  */
 class InterfaceSuffixSniff implements \PHP_CodeSniffer\Sniffs\Sniff
 {
-
     /**
      * A list of tokenizers this sniff supports.
      *
@@ -65,5 +64,4 @@ class InterfaceSuffixSniff implements \PHP_CodeSniffer\Sniffs\Sniff
             $stackPtr++;
         }
     }
-
 }
