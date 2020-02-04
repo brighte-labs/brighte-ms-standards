@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace BrighteCustom\Sniffs\NamingConventions;
 
@@ -48,8 +48,8 @@ class InterfaceSuffixSniff implements \PHP_CodeSniffer\Sniffs\Sniff
      */
     public function process(File $phpcsFile, $stackPtr)
     {
-        $tokens   = $phpcsFile->getTokens();
-        $line     = $tokens[$stackPtr]['line'];
+        $tokens = $phpcsFile->getTokens();
+        $line = $tokens[$stackPtr]['line'];
 
         while ($tokens[$stackPtr]['line'] === $line) {
             if ($tokens[$stackPtr]['type'] === 'T_STRING') {
