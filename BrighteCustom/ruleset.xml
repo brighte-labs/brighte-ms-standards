@@ -5,6 +5,8 @@
     <rule ref="PSR12">
         <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
         <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" />
+        <exclude name="PSR12.Traits.UseDeclaration.UseAfterBrace"/>
+        <exclude name="PSR12.Traits.UseDeclaration.BlankLineAfterLastUse" />
     </rule>
     <rule ref="PEAR.WhiteSpace.ScopeIndent">
         <properties>
