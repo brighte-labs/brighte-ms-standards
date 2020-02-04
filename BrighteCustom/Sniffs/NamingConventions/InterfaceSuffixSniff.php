@@ -54,7 +54,7 @@ class InterfaceSuffixSniff implements \PHP_CodeSniffer\Sniffs\Sniff
                     $phpcsFile->addError(
                         'Interface name is not suffixed with "Interface"',
                         $stackPtr,
-                        'NoInterfaceSuffix',
+                        'NoInterfaceSuffix'
                     );
                 }
             }
