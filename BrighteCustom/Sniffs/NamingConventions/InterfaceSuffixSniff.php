@@ -7,7 +7,7 @@ namespace BrighteCustom\Sniffs\NamingConventions;
 use PHP_CodeSniffer\Files\File;
 
 //phpcs:disable SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
-//phpcs:disable SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingReturnTypeHint
+//phpcs:disable SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
 
 /**
  * InterfaceSuffixSniff
@@ -45,7 +45,7 @@ class InterfaceSuffixSniff implements \PHP_CodeSniffer\Sniffs\Sniff
      *                                        the stack passed in $tokens.
      * @return void
      */
-    public function process(File $phpcsFile, $stackPtr)
+    public function process(File $phpcsFile, $stackPtr): void
     {
         $tokens = $phpcsFile->getTokens();
         $line = $tokens[$stackPtr]['line'];
