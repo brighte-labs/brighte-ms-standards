@@ -15,7 +15,7 @@ use PHP_CodeSniffer\Files\File;
  * Demands that an interface class name ends with Interface
  *
  * @package BrighteCustom
- * @author  Chris Young <chris.young@brighte.com.au>
+ * @author Chris Young <chris.young@brighte.com.au>
  * @license http://spdx.org/licenses/MIT MIT License
  */
 class InterfaceSuffixSniff implements \PHP_CodeSniffer\Sniffs\Sniff
@@ -25,7 +25,7 @@ class InterfaceSuffixSniff implements \PHP_CodeSniffer\Sniffs\Sniff
      *
      * @var string[] array
      */
-    public $supportedTokenizers = ['PHP'];
+    public array $supportedTokenizers = ['PHP'];
 
     /**
      * Returns an array of tokens this test wants to listen for.
@@ -41,9 +41,8 @@ class InterfaceSuffixSniff implements \PHP_CodeSniffer\Sniffs\Sniff
      * Processes this test, when one of its tokens is encountered.
      *
      * @param \PHP_CodeSniffer_File $phpcsFile All the tokens found in the document.
-     * @param int                  $stackPtr  The position of the current token in
+     * @param int $stackPtr The position of the current token in
      *                                        the stack passed in $tokens.
-     * @return void
      */
     public function process(File $phpcsFile, $stackPtr): void
     {

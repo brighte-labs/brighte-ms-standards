@@ -4,8 +4,8 @@
     "keywords": ["coding standard", "cs", "coding", "standard", "ruleset", "phpcs", "PHPCodeSniffer", "CodeSniffer", "sniffer"],
     "type": "library",
     "require": {
-        "consistence/coding-standard": "3.10",
-        "php": "^7.4 || ^8.0"
+        "php": "^7.4 || ^8.0",
+        "slevomat/coding-standard": "^6"
     },
     "scripts": {
         "lint": "phpcs --colors -p",
