@@ -12,14 +12,6 @@
           <property name="ignoreIndentationTokens" type="array" value="T_COMMENT,T_DOC_COMMENT_OPEN_TAG,T_OBJECT_OPERATOR,T_CASE"/>
         </properties>
     </rule>
-    <rule ref="vendor/consistence/coding-standard/Consistence/ruleset.xml">
-        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
-        <exclude name="Squiz.WhiteSpace.FunctionSpacing.BeforeFirst" />
-        <exclude name="Squiz.WhiteSpace.MemberVarSpacing.FirstIncorrect" />
-        <properties>
-            <property name="exceptionsDirectoryName" value="Exceptions" />
-        </properties>
-    </rule>
     <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
         <exclude name="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming.SuperfluousSuffix" />
         <exclude name="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming.SuperfluousSuffix" />
@@ -41,6 +33,7 @@
         <exclude name="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>
         <exclude name="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator.DisallowedNumericLiteralSeparator"/>
         <exclude name="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName"/>
     </rule>
     <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
         <properties>
@@ -55,7 +48,8 @@
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>
-            <property name="spacesCountAroundEqualsSign" value="0" />
+            <property name="spacesCountAroundEqualsSign" type="int" value="0"/>
+            <property name="newlinesCountBetweenOpenTagAndDeclare" type="int" value="2"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
@@ -67,6 +61,11 @@
         <properties>
             <property name="lineLimit" value="120"/>
             <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
+        <properties>
+            <property name="searchAnnotations" type="bool" value="true"/>
         </properties>
     </rule>
 </ruleset>
