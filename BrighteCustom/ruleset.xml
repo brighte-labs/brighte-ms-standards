@@ -8,7 +8,6 @@
         <properties>
           <property name="exact" value="true"/>
           <property name="indent" value="4"/>
-          <property name="tabindent" value="false"/>
           <property name="ignoreIndentationTokens" type="array" value="T_COMMENT,T_DOC_COMMENT_OPEN_TAG,T_OBJECT_OPERATOR,T_CASE"/>
         </properties>
     </rule>
@@ -52,7 +51,7 @@
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>
             <property name="spacesCountAroundEqualsSign" type="int" value="0"/>
-            <property name="newlinesCountBetweenOpenTagAndDeclare" type="int" value="2"/>
+            <property name="linesCountBeforeDeclare" type="int" value="1"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
